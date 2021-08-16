@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Bnak</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <section class="m-8 w-3/4 mx-auto">
+      <h1 class="text-4xl mb-4 ">Earnings</h1>
+        <div class="grid grid-cols-3 bg-white mb-8">
+            <div class=" bg-pink-300 text-center border-r-2 py-16">
+                <h4 class="text-white  text-2xl font-medium mb-2">Net Income</h4>
+                <h1 class="text-5xl text-white font-semibold inline">$<span id="deposit-amount">00</span></h1>
+                
+            </div>
+            <div class=" bg-yellow-200 text-center border-r-2 py-16">
+                <h4 class="text-white  text-2xl font-medium mb-2">Withdrawn</h4>
+                <h1 class="text-5xl text-white font-semibold">$<span id="withdraw-amount">00</span></h1>
+            </div>
+  
+            <div class=" bg-green-200 text-center py-16">
+                <h4 class="text-white text-2xl  font-medium mb-2">Available Balance</h4>
+                <h1 class="text-5xl text-white font-semibold">$<span id="balance">342</span></h1>
+            </div>
+            
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+            <div class=" bg-blue-100 p-4 " >
+                <h1 class="text-2xl mb-4">Please Deposit</h1>
+                <input id="deposit-balance" class=" mb-5  w-8/12 block p-2" type="text" placeholder="$ Your Deposit">
+              
+                <button id="deposit-button" class="bg-blue-500 px-4 py-2 rounded font-medium">Submit now</button>
+            </div>
+            <div class=" bg-pink-100 p-4 " >
+                <h1 class="text-2xl mb-4">Please Withdrawn</h1>
+                <input id="deposit-withdraw" class=" mb-5  w-8/12 block p-2" type="text" placeholder="$ Your Balance">
+              
+                <button id="withdrawn-button" class="bg-green-500 px-4 py-2 rounded font-medium">Submit now</button>
+            </div>
+        </div>
+    </section>
+    <span id="balances"></span> 
+    <script src="js/newBank.js"></script>
+</body>
+</html>
